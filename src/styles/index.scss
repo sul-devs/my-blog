@@ -1,9 +1,2 @@
 @use 'resets';
-
-$primary-color: orange;
-$secondary-color: blue;
-$accent-color: green;
-
-body {
-  background-color: $primary-color;
-}
+@use 'base';
