@@ -13,10 +13,10 @@ $text-color: $secondary-color;
 $button-color: $secondary-color;
 $font-stack: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 $container-width: 1100px;
-$font-sm: 0.8em;
-$font-md: 1em;
-$font-lg: 1.2em;
-$font-xl: 1.8em;
+$font-sm: 1.2em;
+$font-md: 1.5em;
+$font-lg: 1.9em;
+$font-xl: 2.3em;
 
 // Resets
 * {
@@ -44,7 +44,17 @@ $font-xl: 1.8em;
 body {
   background-color: $background-color;
   color: $text-color;
-  font: 1em/1.92 $font-stack;
+  letter-spacing: 0.04em;
+  font: 0.95em/1.5 $font-stack;
+}
+
+// Typography
+h1 {
+  font-size: $font-xl;
+}
+
+p {
+  font-size: $font-md;
 }
 
 // Utilities
@@ -53,6 +63,7 @@ body {
   padding: 0.5em 0.75em;
   background-color: $button-color;
   color: $primary-color;
+  font-weight: 500;
 }
 
 .container {
@@ -68,8 +79,55 @@ body {
   align-items: center;
 }
 
+.wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.basis-500 {
+  flex: 1 400px;
+}
+
 .gap-4 {
   gap: 4em;
+}
+
+.text-center {
+  text-align: center;
+}
+
+// padding
+.p-1 {
+  padding: 1em;
+}
+
+.vp-05 {
+  padding-block: 0.5em;
+}
+
+.vp-1 {
+  padding-block: 1em;
+}
+
+// margin
+.mt-2 {
+  margin-top: 2em;
+}
+
+.vm-05 {
+  margin-block: 0.5em;
+}
+
+.vm-1 {
+  margin-block: 1em;
+}
+
+.section-padding {
+  padding-block: 2em;
+}
+
+.block {
+  display: block;
 }
 
 // Navbar
@@ -81,6 +139,8 @@ body {
     display: none;
   }
 }
+
+// Hero
 
 // Media Queries
 @media screen and (min-width: 680px) {
