@@ -2,3 +2,46 @@
 @use 'base';
 @use 'utilities';
 @use 'variables';
+
+// Variables
+$primary-color: orange;
+$secondary-color: blue;
+$accent-color: green;
+$background-color: $primary-color;
+$text-color: $secondary-color;
+$button-color: $accent-color;
+$font-stack: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+// Resets
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  ul,
+  li {
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  button,
+  input {
+    border: none;
+  }
+}
+
+// Base styles
+body {
+  background-color: $background-color;
+  font: 1.2em/1.92 $font-stack;
+}
+
+// Utilities
+.btn {
+  display: inline-block;
+  padding: 1.2em 1.8em;
+  background-color: $button-color;
+}
