@@ -7,7 +7,11 @@
     <!-- author -->
     <meta name="author" content="Sul Kamara" />
     <!-- favicon -->
-    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
+    <link
+      rel="shortcut icon"
+      href="./assets/img/favicon.png"
+      type="image/x-icon"
+    />
     <!-- title -->
     <title>
       Sul | Software Engineer - Javascript - NodeJS - MongoDB - Full Stack
@@ -19,18 +23,19 @@
       content="Explore my Web Development portfolio. Hi my name is Sul, I am a Software Engineer specialising in the MERN stack. Find an array of software projects I've worked on, and contact me here."
     />
     <!-- styles -->
-    <link rel="stylesheet" href="./styles/index.scss" />
+    <link rel="stylesheet" href="styles/index.scss" />
     <!-- scripts -->
     <script src="./scripts/index.js" defer></script>
   </head>
   <body id="body">
     <!------------ Navbar ------------>
     <nav id="navbar">
-      <div class="container">
+      <div class="container flex-between-center">
         <!-- logo -->
-        <a href="index.html">
+        <a class="logo-link" href="index.html">
           <img
-            src="./img/logo.svg"
+            class="logo-img"
+            src="./assets/img/logo.svg"
             alt="Sul, software engineer logo."
             width="140px"
             height="42.23px"
@@ -38,14 +43,14 @@
         </a>
 
         <!-- nav links -->
-        <ul>
+        <ul class="nav-links gap-4">
           <li><a href="#projects">Projects</a></li>
           <li><a href="#blog">Blog</a></li>
           <li><a href="#about">About</a></li>
         </ul>
 
         <!-- cta contact -->
-        <a href="#contact" class="btn">Contact Me</a>
+        <a href="#contact" class="nav-cta-btn btn">Contact Me</a>
       </div>
     </nav>
   </body>
