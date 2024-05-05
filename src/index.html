@@ -4,6 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- fontawesome icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <!-- author -->
     <meta name="author" content="Sul Kamara" />
     <!-- favicon -->
@@ -275,15 +284,12 @@
                   >
                 </div>
               </article>
-              <br /><br /><br />
-              <hr />
-              <br /><br /><br />
             </li>
           </ul>
         </div>
       </section>
 
-      <section id="articles">
+      <section id="articles" class="section-padding">
         <div class="container">
           <h2 class="section-heading">Recent posts</h2>
           <ul class="cards-wrapper">
@@ -342,5 +348,55 @@
         </div>
       </section>
     </main>
+
+    <footer id="footer" class="section-padding bt-2">
+      <div class="container">
+        <h2 class="section-heading invisible-but-accessible">Footer</h2>
+        <article class="about-me">
+          <h3 class="section-sub-heading">About me</h3>
+          <p class="about-me-text">
+            My name is Sul, I am a self taught software engineer with a keen
+            interest in Web Design and UX. I have good Html/Css skills, and I am
+            currently expanding my Javascript knowledge through projects. Once I
+            have got a good foundation of Javascript knowledge, I will look into
+            learning React. So my future stack will probably be MERN as I'm
+            using NodeJS and MongoDB in my current project.
+          </p>
+          <ul class="socials flex gap-2 vm-2">
+            <li>
+              <a href=""><i class="fab fa-github fa-2x"></i> GitHub</a>
+            </li>
+            <li>
+              <a href=""><i class="fab fa-linkedin fa-2x"></i> LinkedIn</a>
+            </li>
+            <li>
+              <a href=""><i class="fab fa-google fa-2x"></i> Email</a>
+            </li>
+          </ul>
+        </article>
+        <form action="" id="contact-form">
+          <h3 class="section-sub-heading">Contact me</h3>
+          <p class="email-field">
+            <label for="email" class="block mb-1">Email</label>
+            <input
+              type="text"
+              class="email block mb-2 border"
+              placeholder="Enter your email"
+              id="email"
+            />
+          </p>
+          <div class="message-field">
+            <label for="message" class="block mb-1">Message</label>
+            <textarea
+              class="ff-inherit"
+              name="message"
+              id="message"
+              placeholder="Write your message..."
+            ></textarea>
+          </div>
+          <input type="submit" value="Send your message" />
+        </form>
+      </div>
+    </footer>
   </body>
 </html>

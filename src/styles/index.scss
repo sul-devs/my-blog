@@ -73,6 +73,11 @@ p {
   font-size: $font-sssh;
 }
 
+input,
+textarea {
+  padding: 1em 1.5em;
+}
+
 // Utilities
 .btn {
   display: inline-block;
@@ -95,6 +100,10 @@ p {
   align-items: center;
 }
 
+.flex {
+  display: flex;
+}
+
 .wrap {
   display: flex;
   flex-wrap: wrap;
@@ -102,6 +111,10 @@ p {
 
 .basis-500 {
   flex: 1 300px;
+}
+
+.gap-2 {
+  gap: 2em;
 }
 
 .gap-4 {
@@ -136,6 +149,18 @@ p {
 
 .mt-3 {
   margin-top: 3em;
+}
+
+.mb-1 {
+  margin-bottom: 1em;
+}
+
+.mb-2 {
+  margin-bottom: 2em;
+}
+
+.mb-3 {
+  margin-bottom: 3em;
 }
 
 .vm-05 {
@@ -186,6 +211,31 @@ p {
   width: 100%;
 }
 
+.invisible-but-accessible {
+  width: 0;
+  height: 0;
+  opacity: 0;
+  line-height: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.va-middle {
+  vertical-align: middle;
+}
+
+.ff-inherit {
+  font-family: inherit;
+}
+
+.border {
+  border: 1px solid #000;
+}
+
+.bt-2 {
+  border-top: 2px solid #000;
+}
+
 // Navbar
 #navbar {
   .logo-img {
@@ -205,6 +255,17 @@ p {
 #projects {
   img {
     width: 100%;
+  }
+}
+
+// Footer
+#footer {
+  textarea,
+  input {
+    width: 100%;
+  }
+  textarea {
+    height: 20vh;
   }
 }
 
