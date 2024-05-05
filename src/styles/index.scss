@@ -13,10 +13,10 @@ $text-color: $secondary-color;
 $button-color: $secondary-color;
 $font-stack: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 $container-width: 1100px;
-$font-sm: 1.2em;
-$font-md: 1.5em;
-$font-lg: 1.9em;
-$font-xl: 2.3em;
+$font-h: 2.5em;
+$font-sh: 2.3em;
+$font-ssh: 1.9em;
+$font-sssh: 1.2em;
 
 // Resets
 * {
@@ -41,6 +41,10 @@ $font-xl: 2.3em;
 }
 
 // Base styles
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: $background-color;
   color: $text-color;
@@ -49,12 +53,24 @@ body {
 }
 
 // Typography
-h1 {
-  font-size: $font-xl;
+.hero-heading {
+  font-size: $font-h;
+}
+
+.section-heading {
+  font-size: $font-sh;
+}
+
+.section-sub-heading {
+  font-size: $font-ssh;
+}
+
+.section-sub-sub-heading {
+  font-size: $font-sssh;
 }
 
 p {
-  font-size: $font-md;
+  font-size: $font-sssh;
 }
 
 // Utilities
@@ -68,7 +84,7 @@ p {
 
 .container {
   width: 92%;
-  max-width: var(--container-width);
+  max-width: $container-width;
   margin-inline: auto;
   padding: 1em;
 }
@@ -85,7 +101,7 @@ p {
 }
 
 .basis-500 {
-  flex: 1 400px;
+  flex: 1 300px;
 }
 
 .gap-4 {
@@ -110,8 +126,16 @@ p {
 }
 
 // margin
+.mt-1 {
+  margin-top: 1em;
+}
+
 .mt-2 {
   margin-top: 2em;
+}
+
+.mt-3 {
+  margin-top: 3em;
 }
 
 .vm-05 {
@@ -122,12 +146,44 @@ p {
   margin-block: 1em;
 }
 
+.vm-2 {
+  margin-block: 2em;
+}
+
 .section-padding {
+  padding-block: 3em;
+}
+
+.section-heading {
   padding-block: 2em;
+  font-size: $font-sh;
+}
+
+.section-sub-heading {
+  font-size: $font-ssh;
+  font-weight: 500;
+  padding-bottom: 0.5em;
 }
 
 .block {
   display: block;
+}
+
+.align-center {
+  display: flex;
+  align-items: center;
+}
+
+.link {
+  text-decoration: underline;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.w-100 {
+  width: 100%;
 }
 
 // Navbar
@@ -141,6 +197,16 @@ p {
 }
 
 // Hero
+#hero {
+  height: 83vh;
+}
+
+// Projects
+#projects {
+  img {
+    width: 100%;
+  }
+}
 
 // Media Queries
 @media screen and (min-width: 680px) {
