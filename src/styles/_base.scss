@@ -12,6 +12,10 @@ body {
   font: 0.95em/1.5 variables.$font-stack;
 }
 
+main {
+  min-height: 85vh;
+}
+
 // Typography
 .hero-heading {
   font-size: variables.$font-h;

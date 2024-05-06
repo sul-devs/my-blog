@@ -200,6 +200,11 @@
   width: 100%;
 }
 
+.h-120 {
+  object-fit: cover;
+  height: 148.5px;
+}
+
 .invisible-but-accessible {
   width: 0;
   height: 0;
@@ -223,4 +228,10 @@
 
 .bt-2 {
   border-top: 2px solid #000;
+}
+
+.cards-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 3em;
 }
