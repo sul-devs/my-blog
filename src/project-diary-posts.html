@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- fontawesome icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- author -->
+    <meta name="author" content="Sul Kamara" />
+    <!-- favicon -->
+    <link
+      rel="shortcut icon"
+      href="./assets/img/favicon.png"
+      type="image/x-icon"
+    />
+    <!-- title -->
+    <title>
+      Sul | Software Engineer - Javascript - NodeJS - MongoDB - Full Stack
+      Developer
+    </title>
+    <!-- description -->
+    <meta
+      name="description"
+      content="Explore my Web Development portfolio. Hi my name is Sul, I am a Software Engineer specialising in the MERN stack. Find an array of software projects I've worked on, and contact me here."
+    />
+    <!-- styles -->
+    <link rel="stylesheet" href="styles/index.scss" />
+    <!-- scripts -->
+    <script src="./scripts/index.js" defer></script>
+  </head>
+  <body id="body">
+    <!------------ Navbar ------------>
+    <nav id="navbar">
+      <div class="container flex-between-center">
+        <!-- logo -->
+        <a class="logo-link" href="index.html">
+          <img
+            class="logo-img"
+            src="./assets/img/logo.svg"
+            alt="Sul, software engineer logo."
+            width="140px"
+            height="42.23px"
+          />
+        </a>
+
+        <!-- nav links -->
+        <ul class="nav-links gap-4">
+          <li><a href="project-diaries.html">Projects</a></li>
+          <li><a href="blog-landing.html">Blog</a></li>
+          <li><a href="#footer">About</a></li>
+        </ul>
+
+        <!-- cta contact -->
+        <a href="#footer" class="nav-cta-btn btn">Contact Me</a>
+      </div>
+    </nav>
+
+    <header class="text-center section-padding">
+      <div class="container">
+        <h1>Prioritasker</h1>
+        <p>Choose a post to read below.</p>
+      </div>
+    </header>
+
+    <main id="main">
+      <section id="project-diaries">
+        <div class="container">
+          <ul class="posts-wrapper cards-wrapper">
+            <li class="post border p-3 vp-5">
+              <a href="">
+                <h2 class="post-title">
+                  Day 6 - Creating a task prioritisation application
+                </h2>
+              </a>
+            </li>
+            <li class="post border p-3 vp-5">
+              <a href="">
+                <h2 class="post-title">
+                  Day 5 - Creating a task prioritisation application
+                </h2>
+              </a>
+            </li>
+            <li class="post border p-3 vp-5">
+              <a href="">
+                <h2 class="post-title">
+                  Day 4 - Creating a task prioritisation application
+                </h2>
+              </a>
+            </li>
+            <li class="post border p-3 vp-5">
+              <a href="">
+                <h2 class="post-title">
+                  Day 3 - Creating a task prioritisation application
+                </h2>
+              </a>
+            </li>
+            <li class="post border p-3 vp-5">
+              <a href="">
+                <h2 class="post-title">
+                  Day 2 - Creating a task prioritisation application
+                </h2>
+              </a>
+            </li>
+            <li class="post border p-3 vp-5">
+              <a href="">
+                <h2 class="post-title">
+                  Day 1 - Creating a task prioritisation application
+                </h2>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer" class="section-padding bt-2">
+      <div class="container">
+        <h2 class="section-heading invisible-but-accessible">Footer</h2>
+        <!-- About me -->
+        <article class="about-me mb-5">
+          <h3 class="section-sub-heading">About me</h3>
+          <p class="about-me-text">
+            My name is Sul, I am a self taught software engineer with a keen
+            interest in Web Design and UX. I have good Html/Css skills, and I am
+            currently expanding my Javascript knowledge through projects. Once I
+            have got a good foundation of Javascript knowledge, I will look into
+            learning React. So my future stack will probably be MERN as I'm
+            using NodeJS and MongoDB in my current project.
+          </p>
+          <ul class="socials flex gap-2 vm-2">
+            <li>
+              <a href="https://github.com/sul-devs"
+                ><i class="fab fa-github fa-2x"></i> GitHub</a
+              >
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/sul-dev"
+                ><i class="fab fa-linkedin fa-2x"></i> LinkedIn</a
+              >
+            </li>
+            <li>
+              <a href="mailto:sulaimankamara110@gmail.com"
+                ><i class="fab fa-google fa-2x"></i> Email</a
+              >
+            </li>
+          </ul>
+        </article>
+
+        <!-- Contact form -->
+        <form action="" id="contact-form">
+          <h3 class="section-sub-heading">Contact me</h3>
+          <p class="email-field">
+            <label for="email" class="block mb-1">Email</label>
+            <input
+              type="text"
+              class="email block mb-2 border"
+              placeholder="Enter your email"
+              id="email"
+            />
+          </p>
+          <div class="message-field">
+            <label for="message" class="block mb-1">Message</label>
+            <textarea
+              class="ff-inherit"
+              name="message"
+              id="message"
+              placeholder="Write your message..."
+            ></textarea>
+          </div>
+          <input type="submit" value="Send your message" />
+        </form>
+        <aside class="flex-between-center">
+          <!-- copyright message -->
+          <p class="mt-3">
+            &copy; 2024 Sul-devs.github.io, All rights reserved.
+          </p>
+          <!-- Admin login -->
+          <a href="#" class="login-btn btn btn-outline">Log in</a>
+        </aside>
+      </div>
+    </footer>
+  </body>
+</html>
