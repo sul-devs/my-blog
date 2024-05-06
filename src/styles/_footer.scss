@@ -1,0 +1,20 @@
+// Footer
+#footer {
+  textarea,
+  input {
+    width: 100%;
+  }
+  input[type='submit'] {
+    background-color: #000;
+    color: #fff;
+  }
+  textarea {
+    height: 20vh;
+  }
+  aside {
+    align-items: baseline;
+    .login-btn {
+      opacity: 0.1;
+    }
+  }
+}

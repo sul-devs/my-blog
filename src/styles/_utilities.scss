@@ -1,8 +1,174 @@
-// @use 'variables';
-// @use 'base';
+@use 'variables';
+@use 'base';
 
-// .btn {
-//   display: inline-block;
-//   padding: 1.2em 1.8em;
-//   background-color: $button-color;
-// }
+// Utilities
+.btn {
+  display: inline-block;
+  padding: 0.5em 0.75em;
+  background-color: variables.$button-color;
+  color: variables.$primary-color;
+  font-weight: 500;
+}
+
+.btn.btn-outline {
+  background: transparent;
+  border: 2px solid #000;
+  color: #000;
+}
+
+.container {
+  width: 92%;
+  max-width: variables.$container-width;
+  margin-inline: auto;
+  padding: 1em;
+}
+
+.flex-between-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex {
+  display: flex;
+}
+
+.wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.basis-500 {
+  flex: 1 300px;
+}
+
+.gap-2 {
+  gap: 2em;
+}
+
+.gap-4 {
+  gap: 4em;
+}
+
+.text-center {
+  text-align: center;
+}
+
+// padding
+.p-1 {
+  padding: 1em;
+}
+
+.vp-05 {
+  padding-block: 0.5em;
+}
+
+.vp-1 {
+  padding-block: 1em;
+}
+
+// margin
+.mt-1 {
+  margin-top: 1em;
+}
+
+.mt-2 {
+  margin-top: 2em;
+}
+
+.mt-3 {
+  margin-top: 3em;
+}
+
+.mb-1 {
+  margin-bottom: 1em;
+}
+
+.mb-2 {
+  margin-bottom: 2em;
+}
+
+.mb-3 {
+  margin-bottom: 3em;
+}
+
+.mb-4 {
+  margin-bottom: 4em;
+}
+
+.mb-5 {
+  margin-bottom: 5em;
+}
+
+.vm-05 {
+  margin-block: 0.5em;
+}
+
+.vm-1 {
+  margin-block: 1em;
+}
+
+.vm-2 {
+  margin-block: 2em;
+}
+
+.section-padding {
+  padding-block: 3em;
+}
+
+.section-heading {
+  padding-block: 2em;
+  font-size: variables.$font-sh;
+}
+
+.section-sub-heading {
+  font-size: variables.$font-ssh;
+  font-weight: 500;
+  padding-bottom: 0.5em;
+}
+
+.block {
+  display: block;
+}
+
+.align-center {
+  display: flex;
+  align-items: center;
+}
+
+.link {
+  text-decoration: underline;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.invisible-but-accessible {
+  width: 0;
+  height: 0;
+  opacity: 0;
+  line-height: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.va-middle {
+  vertical-align: middle;
+}
+
+.ff-inherit {
+  font-family: inherit;
+}
+
+.border {
+  border: 1px solid #000;
+}
+
+.bt-2 {
+  border-top: 2px solid #000;
+}
