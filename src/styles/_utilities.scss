@@ -264,12 +264,14 @@
 .section-heading {
   padding-block: 2em;
   font-size: variables.$font-sh;
+  text-transform: capitalize;
 }
 
 .section-sub-heading {
   font-size: variables.$font-ssh;
   font-weight: 500;
   padding-bottom: 0.5em;
+  text-transform: capitalize;
 }
 
 .block {

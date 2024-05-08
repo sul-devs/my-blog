@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- fontawesome icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- author -->
+    <meta name="author" content="Sul Kamara" />
+    <!-- favicon -->
+    <link
+      rel="shortcut icon"
+      href="./assets/img/favicon.png"
+      type="image/x-icon"
+    />
+    <meta name="robots" content="noindex, nofollow" />
+    <!-- styles -->
+    <link rel="stylesheet" href="styles/index.scss" />
+    <!-- scripts -->
+    <script src="./scripts/index.js" defer></script>
+  </head>
+  <body id="body">
+    <!------------ Navbar ------------>
+    <header id="header">
+      <div class="container flex-between-center">
+        <h1 class="section-heading">Manage your content</h1>
+        <a href="" class="sign-out-btn">sign out</a>
+      </div>
+    </header>
+
+    <main id="main" class="ce">
+      <!-- Project Diaries -->
+      <section id="project-diaries">
+        <div class="container">
+          <h2 class="section-heading">Project Diaries</h2>
+          <p>Choose a Project Diary to add posts to or edit existing posts.</p>
+          <ul class="project-diaries-wrapper cards-wrapper mt-3">
+            <!-- project diary card -->
+            <li class="project-diary-card border p-2">
+              <a href="">
+                <img
+                  src="assets/img/prioritasker-screenshot.png"
+                  class="w-100 h-120"
+                  alt=""
+                />
+                <h2 class="project-name">Prioritasker</h2>
+                <p class="project-diary-title">
+                  Building a task prioritising application.
+                </p>
+              </a>
+            </li>
+
+            <!-- project diary card -->
+            <li class="project-diary-card border p-2">
+              <a href="">
+                <img
+                  src="assets/img/software-engineer-web-developer-frontend.png"
+                  class="w-100 h-120"
+                  alt=""
+                />
+                <h2 class="project-name">Opidur</h2>
+                <p class="project-diary-title">
+                  Creating a digital marketing agency landing page.
+                </p>
+              </a>
+            </li>
+          </ul>
+          <a href="" class="load-more text-center mt-4 block"
+            >load more project diaries +</a
+          >
+        </div>
+      </section>
+
+      <!-- Tutorials -->
+      <section id="tutorials">
+        <div class="container">
+          <h2 class="section-heading">Tutorial Posts</h2>
+          <p>Create a new tutorial post or edit an existing one.</p>
+          <ul class="tutorials-wrapper cards-wrapper mt-3">
+            <!-- tutorial card -->
+            <li class="tutorial-card border p-2">
+              <a href="tutorial-post.html">
+                <img src="assets/img/github.jpg" class="w-100 h-120" alt="" />
+                <h2 class="post-title">
+                  How to use Git in a personal project?
+                </h2>
+                <p class="post-date">05/05/24</p>
+              </a>
+            </li>
+
+            <!-- tutorial card -->
+            <li class="tutorial-card border p-2">
+              <a href="tutorial-post.html">
+                <img src="assets/img/code.jpg" class="w-100 h-120" alt="" />
+                <h2 class="post-title">How to use Parcel for your project?</h2>
+                <p class="post-date">05/05/24</p>
+              </a>
+            </li>
+          </ul>
+          <a href="" class="load-more text-center mt-4 block"
+            >load more tutorial posts +</a
+          >
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
