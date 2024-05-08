@@ -29,6 +29,10 @@
   align-items: center;
 }
 
+.scrollable {
+  overflow-x: scroll;
+}
+
 .wrap {
   display: flex;
   flex-wrap: wrap;
@@ -51,6 +55,10 @@
 }
 
 // padding
+.p-05 {
+  padding: 0.5em;
+}
+
 .p-1 {
   padding: 1em;
 }
@@ -63,6 +71,19 @@
   padding: 3em;
 }
 
+.p-4 {
+  padding: 4em;
+}
+
+.p-5 {
+  padding: 5em;
+}
+
+.p-xl {
+  padding: 9em;
+}
+
+// vertical padding
 .vp-05 {
   padding-block: 0.5em;
 }
@@ -91,6 +112,7 @@
   padding-block: 9em;
 }
 
+// horizontal padding
 .hp-05 {
   padding-inline: 0.5em;
 }
@@ -119,7 +141,11 @@
   padding-inline: 8em;
 }
 
-// margin
+// margin top
+.mt-05 {
+  margin-top: 0.5em;
+}
+
 .mt-1 {
   margin-top: 1em;
 }
@@ -130,6 +156,52 @@
 
 .mt-3 {
   margin-top: 3em;
+}
+
+.mt-4 {
+  margin-top: 4em;
+}
+
+.mt-5 {
+  margin-top: 5em;
+}
+
+.mt-xl {
+  margin-top: 9em;
+}
+
+// margin left
+.ml-05 {
+  margin-left: 0.5em;
+}
+
+.ml-1 {
+  margin-left: 1em;
+}
+
+.ml-2 {
+  margin-left: 2em;
+}
+
+.ml-3 {
+  margin-left: 3em;
+}
+
+.ml-4 {
+  margin-left: 4em;
+}
+
+.ml-5 {
+  margin-left: 5em;
+}
+
+.ml-xl {
+  margin-left: 9em;
+}
+
+// margin bottom
+.mb-05 {
+  margin-bottom: 0.5em;
 }
 
 .mb-1 {
@@ -152,6 +224,11 @@
   margin-bottom: 5em;
 }
 
+.mb-xl {
+  margin-bottom: 9em;
+}
+
+// vertical margin
 .vm-05 {
   margin-block: 0.5em;
 }
@@ -162,6 +239,22 @@
 
 .vm-2 {
   margin-block: 2em;
+}
+
+.vm-3 {
+  margin-block: 3em;
+}
+
+.vm-4 {
+  margin-block: 4em;
+}
+
+.vm-5 {
+  margin-block: 5em;
+}
+
+.vm-xl {
+  margin-block: 9em;
 }
 
 .section-padding {
@@ -183,6 +276,10 @@
   display: block;
 }
 
+.add-bullets {
+  list-style-type: circle;
+}
+
 .align-center {
   display: flex;
   align-items: center;
@@ -196,17 +293,35 @@
   text-decoration: underline;
 }
 
+.center-all {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .text-center {
   text-align: center;
+}
+
+.text-right {
+  text-align: right;
 }
 
 .w-100 {
   width: 100%;
 }
 
+.w-400 {
+  width: 400px;
+}
+
 .h-120 {
   object-fit: cover;
   height: 148.5px;
+}
+
+.w-fc {
+  width: fit-content;
 }
 
 .invisible-but-accessible {
@@ -236,6 +351,6 @@
 
 .cards-wrapper {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 3em;
 }
