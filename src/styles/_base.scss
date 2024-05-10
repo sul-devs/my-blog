@@ -38,6 +38,17 @@ p {
 }
 
 input,
-textarea {
+textarea,
+button {
   padding: 1em 1.5em;
+  font: inherit;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+button {
+  cursor: pointer;
 }
