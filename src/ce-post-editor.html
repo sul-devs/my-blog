@@ -27,40 +27,31 @@
     <script src="./scripts/index.js" defer></script>
   </head>
   <body id="body">
-    <header id="header">
-      <div class="container flex-between-center">
-        <h1>Login as Admin</h1>
-        <a href="ce-pd.html">next screen</a>
-      </div>
-    </header>
-
-    <main id="main" class="center-all">
-      <form class="ce-form" action="">
-        <ul class="form-fields">
-          <li class="form-field">
-            <label for="username">Username</label>
+    <div class="container">
+      <form action="">
+        <header class="flex gap-2 section-padding ce-post-editor">
+          <p class="w-100">
             <input
               type="text"
-              name="username"
-              id="username"
-              placeholder="johndoe29"
-              class="block mt-1 w-100"
+              name="post-title"
+              id="post-title"
+              placeholder="Post Title..."
+              class="w-100"
             />
-          </li>
-          <li class="form-field vm-2">
-            <label for="password">Password</label>
-            <input
-              type="text"
-              name="password"
-              id="password"
-              placeholder="XXXXXXXX"
-              class="block mt-1 w-100"
-            />
-          </li>
-        </ul>
-        <button type="submit" class="w-100 p-1">Sign in</button>
+          </p>
+          <button type="submit" class="publish-btn btn p-1 hp-2">
+            Publish
+          </button>
+        </header>
+        <main id="main" class="center-all">
+          <textarea
+            name="article"
+            id="article"
+            placeholder="Write your article"
+            class="w-100 h-75"
+          ></textarea>
+        </main>
       </form>
-      <br /><br /><br />
-    </main>
+    </div>
   </body>
 </html>
