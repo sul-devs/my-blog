@@ -6,3 +6,9 @@
     }
   }
 }
+
+@media screen and (max-width: 600px) {
+  .ce-post-editor {
+    flex-direction: column;
+  }
+}

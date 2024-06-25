@@ -1,6 +1,21 @@
+@use 'variables';
+
 // Projects
 #projects {
   img {
     width: 100%;
   }
+}
+
+.projects-buttons a {
+  color: variables.$accent-color;
+}
+
+.home .projects > *:not(:last-child) {
+  margin-bottom: 20em;
+}
+
+.home .project-card img:hover {
+  transform: rotate(17deg);
+  transition: all 1s ease;
 }
