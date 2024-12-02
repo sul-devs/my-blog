@@ -1,0 +1,26 @@
+@use 'variables';
+
+// Footer
+#footer {
+  textarea,
+  input {
+    width: 100%;
+  }
+  textarea {
+    height: 20vh;
+  }
+  aside {
+    align-items: baseline;
+    .login-btn {
+      color: #fff;
+    }
+  }
+  i {
+    color: variables.$accent-color;
+  }
+  form {
+    input[type='submit'] {
+      background-color: variables.$accent-color !important;
+    }
+  }
+}

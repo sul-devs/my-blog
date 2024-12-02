@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- fontawesome icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- author -->
+    <meta name="author" content="Sul Kamara" />
+    <!-- favicon -->
+    <link
+      rel="shortcut icon"
+      href="./assets/img/favicon.png"
+      type="image/x-icon"
+    />
+    <meta name="robots" content="noindex, nofollow" />
+    <!-- styles -->
+    <link rel="stylesheet" href="styles/index.scss" />
+    <!-- scripts -->
+    <script src="./scripts/index.js" defer></script>
+  </head>
+  <body id="body">
+    <div class="container">
+      <form action="">
+        <header class="flex gap-2 section-padding ce-post-editor">
+          <p class="w-100">
+            <input
+              type="text"
+              name="post-title"
+              id="post-title"
+              placeholder="Post Title..."
+              class="w-100"
+            />
+          </p>
+          <button type="submit" class="publish-btn btn p-1 hp-2">
+            Publish
+          </button>
+        </header>
+        <main id="main" class="center-all">
+          <textarea
+            name="article"
+            id="article"
+            placeholder="Write your article"
+            class="w-100 h-75"
+          ></textarea>
+        </main>
+      </form>
+    </div>
+  </body>
+</html>

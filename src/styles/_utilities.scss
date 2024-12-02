@@ -1,0 +1,175 @@
+@use 'variables';
+@use 'base';
+
+// Utilities
+.btn {
+  display: inline-block;
+  padding: 0.5em 0.75em;
+  background-color: variables.$button-color;
+  color: variables.$primary-color;
+  font-weight: 500;
+}
+
+.btn.btn-outline {
+  background: transparent;
+  border: 2px solid #000;
+  color: #000;
+}
+
+.container {
+  width: 92%;
+  max-width: variables.$container-width;
+  margin-inline: auto;
+  padding: 1em;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-between-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.scrollable {
+  overflow-x: scroll;
+}
+
+.wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-1-220 {
+  flex: 1 220px;
+}
+
+.basis-500 {
+  flex: 1 300px;
+}
+
+.gap-1 {
+  gap: 1em;
+}
+
+.gap-2 {
+  gap: 2em;
+}
+
+.gap-4 {
+  gap: 4em;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.section-padding {
+  padding-block: 3em;
+}
+
+.section-heading {
+  padding-block: 2em;
+  font-size: variables.$font-sh;
+  text-transform: capitalize;
+}
+
+.section-sub-heading {
+  font-size: variables.$font-ssh;
+  font-weight: 500;
+  padding-bottom: 0.5em;
+  text-transform: capitalize;
+}
+
+.block {
+  display: block;
+}
+
+.add-bullets {
+  list-style-type: circle;
+}
+
+.align-center {
+  display: flex;
+  align-items: center;
+}
+
+.link {
+  text-decoration: underline;
+}
+
+.center-all {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.w-80 {
+  width: 80%;
+}
+
+.w-400 {
+  width: 400px;
+}
+
+.h-120 {
+  object-fit: cover;
+  height: 148.5px;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.h-75 {
+  height: 75vh;
+}
+
+.w-fc {
+  width: fit-content;
+}
+
+.invisible-but-accessible {
+  width: 0;
+  height: 0;
+  opacity: 0;
+  line-height: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.va-middle {
+  vertical-align: middle;
+}
+
+.ff-inherit {
+  font-family: inherit;
+}
+
+.border {
+  border: 1px solid #000;
+}
+
+.bt-2 {
+  border-top: 2px solid #000;
+}
+
+.cards-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 3em;
+}

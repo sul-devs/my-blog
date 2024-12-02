@@ -1,0 +1,14 @@
+// Media Queries
+@media screen and (min-width: 680px) {
+  #navbar {
+    ul.nav-links {
+      display: flex;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .ce-post-editor {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,545 @@
+/* Resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* ul,
+* li {
+  list-style: none;
+}
+* a {
+  text-decoration: none;
+  color: #ffffff;
+}
+* button,
+* input {
+  border: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #332e3c;
+  color: #ffffff;
+  letter-spacing: 0.04em;
+  font: 0.95em/1.5 "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main {
+  min-height: 85vh;
+}
+
+.hero-heading {
+  font-size: 2.5em;
+}
+
+.section-heading {
+  font-size: 2.3em;
+}
+
+.section-sub-heading {
+  font-size: 1.9em;
+}
+
+.section-sub-sub-heading {
+  font-size: 1.2em;
+}
+
+p {
+  font-size: 1.2em;
+}
+
+input,
+textarea,
+button {
+  padding: 1em 1.5em;
+  font: inherit;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #fff;
+  transition: all 0.35s ease-in;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.5em 0.75em;
+  background-color: #f0c808;
+  color: #332e3c;
+  font-weight: 500;
+}
+
+.btn.btn-outline {
+  background: transparent;
+  border: 2px solid #000;
+  color: #000;
+}
+
+.container {
+  width: 92%;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1em;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-between-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.scrollable {
+  overflow-x: scroll;
+}
+
+.wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-1-220 {
+  flex: 1 220px;
+}
+
+.basis-500 {
+  flex: 1 300px;
+}
+
+.gap-1 {
+  grid-gap: 1em;
+  gap: 1em;
+}
+
+.gap-2 {
+  grid-gap: 2em;
+  gap: 2em;
+}
+
+.gap-4 {
+  grid-gap: 4em;
+  gap: 4em;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.section-padding {
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+
+.section-heading {
+  padding-top: 2em;
+  padding-bottom: 2em;
+  font-size: 2.3em;
+  text-transform: capitalize;
+}
+
+.section-sub-heading {
+  font-size: 1.9em;
+  font-weight: 500;
+  padding-bottom: 0.5em;
+  text-transform: capitalize;
+}
+
+.block {
+  display: block;
+}
+
+.add-bullets {
+  list-style-type: circle;
+}
+
+.align-center {
+  display: flex;
+  align-items: center;
+}
+
+.link {
+  text-decoration: underline;
+}
+
+.center-all {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.w-80 {
+  width: 80%;
+}
+
+.w-400 {
+  width: 400px;
+}
+
+.h-120 {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 148.5px;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.h-75 {
+  height: 75vh;
+}
+
+.w-fc {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.invisible-but-accessible {
+  width: 0;
+  height: 0;
+  opacity: 0;
+  line-height: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.va-middle {
+  vertical-align: middle;
+}
+
+.ff-inherit {
+  font-family: inherit;
+}
+
+.border {
+  border: 1px solid #000;
+}
+
+.bt-2 {
+  border-top: 2px solid #000;
+}
+
+.cards-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-gap: 3em;
+  gap: 3em;
+}
+
+#navbar .logo-img {
+  vertical-align: middle;
+}
+#navbar .nav-links {
+  display: none;
+}
+
+#hero {
+  height: 83vh;
+}
+#hero img {
+  border-radius: 100px;
+}
+
+#projects img {
+  width: 100%;
+}
+
+.projects-buttons a {
+  color: #f0c808;
+}
+
+.home .projects > *:not(:last-child) {
+  margin-bottom: 20em;
+}
+
+.home .project-card img:hover {
+  transform: rotate(17deg);
+  transition: all 1s ease;
+}
+
+#footer textarea,
+#footer input {
+  width: 100%;
+}
+#footer textarea {
+  height: 20vh;
+}
+#footer aside {
+  align-items: baseline;
+}
+#footer aside .login-btn {
+  color: #fff;
+}
+#footer i {
+  color: #f0c808;
+}
+#footer form input[type=submit] {
+  background-color: #f0c808 !important;
+}
+
+@media screen and (min-width: 680px) {
+  #navbar ul.nav-links {
+    display: flex;
+  }
+}
+@media screen and (max-width: 600px) {
+  .ce-post-editor {
+    flex-direction: column;
+  }
+}
+.ce .ce-form {
+  background-color: rgb(80, 109, 138);
+  color: #fff;
+  padding: 2em;
+}
+.ce .section-heading {
+  padding-top: 0.75em;
+  padding-bottom: 0.75em;
+}
+
+.mt-05 {
+  margin-top: 0.5em;
+}
+
+.mt-1 {
+  margin-top: 1em;
+}
+
+.mt-2 {
+  margin-top: 2em;
+}
+
+.mt-3 {
+  margin-top: 3em;
+}
+
+.mt-4 {
+  margin-top: 4em;
+}
+
+.mt-5 {
+  margin-top: 5em;
+}
+
+.mt-xl {
+  margin-top: 9em;
+}
+
+.ml-05 {
+  margin-left: 0.5em;
+}
+
+.ml-1 {
+  margin-left: 1em;
+}
+
+.ml-2 {
+  margin-left: 2em;
+}
+
+.ml-3 {
+  margin-left: 3em;
+}
+
+.ml-4 {
+  margin-left: 4em;
+}
+
+.ml-5 {
+  margin-left: 5em;
+}
+
+.ml-xl {
+  margin-left: 9em;
+}
+
+.mb-05 {
+  margin-bottom: 0.5em;
+}
+
+.mb-1 {
+  margin-bottom: 1em;
+}
+
+.mb-2 {
+  margin-bottom: 2em;
+}
+
+.mb-3 {
+  margin-bottom: 3em;
+}
+
+.mb-4 {
+  margin-bottom: 4em;
+}
+
+.mb-5 {
+  margin-bottom: 5em;
+}
+
+.mb-xl {
+  margin-bottom: 9em;
+}
+
+.vm-05 {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.vm-1 {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.vm-2 {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.vm-3 {
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+
+.vm-4 {
+  margin-top: 4em;
+  margin-bottom: 4em;
+}
+
+.vm-5 {
+  margin-top: 5em;
+  margin-bottom: 5em;
+}
+
+.vm-xl {
+  margin-top: 9em;
+  margin-bottom: 9em;
+}
+
+.p-05 {
+  padding: 0.5em;
+}
+
+.p-1 {
+  padding: 1em;
+}
+
+.p-2 {
+  padding: 2em;
+}
+
+.p-3 {
+  padding: 3em;
+}
+
+.p-4 {
+  padding: 4em;
+}
+
+.p-5 {
+  padding: 5em;
+}
+
+.p-xl {
+  padding: 9em;
+}
+
+.vp-05 {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+.vp-1 {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.vp-2 {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.vp-3 {
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+
+.vp-4 {
+  padding-top: 4em;
+  padding-bottom: 4em;
+}
+
+.vp-5 {
+  padding-top: 5em;
+  padding-bottom: 5em;
+}
+
+.vp-xl {
+  padding-top: 9em;
+  padding-bottom: 9em;
+}
+
+.hp-05 {
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
+.hp-1 {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.hp-2 {
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.hp-3 {
+  padding-left: 3em;
+  padding-right: 3em;
+}
+
+.hp-4 {
+  padding-left: 4em;
+  padding-right: 4em;
+}
+
+.hp-5 {
+  padding-left: 5em;
+  padding-right: 5em;
+}
+
+.hp-xl {
+  padding-left: 8em;
+  padding-right: 8em;
+}
+
+/*# sourceMappingURL=/styles.434540e1.css.map */

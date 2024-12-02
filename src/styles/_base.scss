@@ -1,0 +1,59 @@
+@use 'variables';
+
+// Base styles
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: variables.$background-color;
+  color: variables.$text-color;
+  letter-spacing: 0.04em;
+  font: 0.95em/1.5 variables.$font-stack;
+}
+
+main {
+  min-height: 85vh;
+}
+
+// Typography
+.hero-heading {
+  font-size: variables.$font-h;
+}
+
+.section-heading {
+  font-size: variables.$font-sh;
+}
+
+.section-sub-heading {
+  font-size: variables.$font-ssh;
+}
+
+.section-sub-sub-heading {
+  font-size: variables.$font-sssh;
+}
+
+p {
+  font-size: variables.$font-sssh;
+}
+
+input,
+textarea,
+button {
+  padding: 1em 1.5em;
+  font: inherit;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #fff;
+  transition: all 0.35s ease-in;
+}
